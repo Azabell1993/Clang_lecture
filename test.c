@@ -11,9 +11,6 @@ int main(void)
 	scanf("%d", &a);
 	scanf("%d", &b);
 
-	int Num1;
-	int Num2;
-
 	printf("sum : %d\n", output_sum(a,b));
 
 	return (0);
