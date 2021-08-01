@@ -14,10 +14,10 @@ int main(void)
 
 	strcpy(name, "Park ji woo");
 	strcpy(city, "Seoul");
-	age = 29;
+	age = 0x00000029;
 	
 	printf("Name : %s\n", name);
 	printf("City : %s\n", city);
-	printf("Age : %d\n", age);
+	printf("Age : %X\n", age);
 	return (0);	
 }
