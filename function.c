@@ -12,8 +12,8 @@ int main(void)
 	scanf("%d%d", &a, &b);
 	
 	printf_Hello();
-	printf("sum : %d\n", Sum(a,b));
-	printf("mi : %d\n", Sub(a,b));
+	printf("sum : %d + %d = %d\n", a, b, Sum(a,b));
+	printf("mi : %d - %d = %d\n", a,b,Sub(a,b));
 	return (0);
 }
 
