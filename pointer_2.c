@@ -18,22 +18,16 @@ int		main(void)
 int 	step_1()
 {
 	int 	Num;
-
 	scanf("%d", &Num);
-
 	int	*Ptr = &Num;
-
 	return (*Ptr);
 }
 
 int		step_2()
 {
 	int		*Ptr;
-
 	Ptr = (int*)malloc(4);
-
 	scanf("%d", Ptr);
-
 	return (*Ptr);
 }
 
@@ -42,8 +36,6 @@ int		step_3()
 	unsigned int	**pp;
 	pp 	= (unsigned int**)malloc(sizeof(int*));
 	*pp = (unsigned int*)malloc(sizeof(int));
-
 	**pp = 234;
-
 	return (**pp);
 }

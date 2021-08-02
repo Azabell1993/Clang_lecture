@@ -15,6 +15,8 @@ int main(void)
 	printf("20대부터 시작해서 연령층이 몇 개 인가요 : ");
  	scanf("%d", &age_step);
 
+	//malloc.h 혹은 stdlib.h에 들어가는 malloc에 대한 개념.
+	//메모리 최대량 할당하기
 	p_limit_table = (unsigned char*)malloc(age_step);
 	p = (unsigned char**)malloc(sizeof(unsigned char*)*age_step);
 
@@ -64,3 +66,4 @@ int main(void)
 
 	return (0);
 }
+
