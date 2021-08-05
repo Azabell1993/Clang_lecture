@@ -28,9 +28,6 @@ int		main(void)
 		i++;
 	}
 
-	printf("float 자료형으로 변환... \n");
-	printf("%d %c %d = %.2f\n", Num1, op_flag[2], Num2, (float)((*P[0])(Num1, Num2)/2));
-
 	return (0);
 }
 
