@@ -18,10 +18,11 @@ int main(int argc, char *argv[], char *envpp[])
 
 	int loc_var;
 
-	loc_var = 10;
-	loc_volatile = 11;
-	loc_register = 12;
+	loc_var = 10;		
+	loc_volatile = 11;	//volatile
+	loc_register = 12; 	//register
 
+	//setjmp는 함수를 넘나드는 점프라서 goto보다 더 위험한 것이라서 os프로그래밍에서는 사용하지 않는 것을 권장함.
 	if(setjmp(glob_buffer) != 0) {
 	printf("afer longjmp , loc_var = %d, loc_volatile = %d, loc_register = %d\n", loc_var, loc_volatile, loc_register);
 	exit(0);

@@ -97,26 +97,25 @@ int main(void)
 	printf("1번가 %d\n", *(*Ptr1)+1);
 
 	printf("\n");
-
+	
 	int p = 10;
 	int* pt = &p;
 	
 	int** ppt = &pt;
 
+
+	printf("int p =10, int *pt = &p \n");
 	printf("p의 값  : %d\n",p);
-	printf("&p의 값 : %d\n", &p);
-	printf("&p의 값 : %p\n\n", pt);
+	printf("p의 주소값(%%d): %d\n", &p);
+	printf("&p의 주소값(%%p) : %p\n\n", pt);
 
 	printf("*pt의 값 : %d\n", *pt);
-	printf("&pt의 값 : %d\n", &pt);
-	printf("&pt의 값 : %p\n\n", pt);
+	printf("&pt의 주소값(%%d) : %d\n", &pt);
+	printf("&pt의 주소값(%%p) : %p\n\n", pt);
 
 	printf("ppt의 값 : %d\n", **ppt);
-	printf("&ppt의 값 : %d\n", &ppt);
+	printf("&ppt의 주소값 : %d\n", &ppt);
 
-	//주소를 한 칸 다음에 저장을 시켰으므로....
-	//int의 byte크기는 4...
-	//4만큼 커진 것을 확인 할 수 있다.
 	printf("&ppt의 값 : %p\n\n", ppt);
 
 	
